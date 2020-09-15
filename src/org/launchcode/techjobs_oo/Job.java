@@ -96,14 +96,14 @@ public class Job {
     public String toString(){
         String toPrint ="\nID: "+ id + "\n";
         int oops = 0;
-        if(name == null) {
+        if(name == null || name.equals("")) {
             toPrint += "Name: Data not available\n";
             oops++;
         }
         else {
             toPrint += "Name: "+ name + "\n";
         }
-        if(employer == null) {
+        if(employer == null || employer.toString().equals("")) {
             toPrint += "Employer: Data not available\n";
             oops++;
         }
@@ -111,7 +111,7 @@ public class Job {
             toPrint += "Employer: "+ employer.toString() + "\n";
         }
 
-        if(location == null) {
+        if(location == null || location.toString().equals("")) {
             toPrint += "Location: Data not available\n";
             oops++;
         }
@@ -119,7 +119,7 @@ public class Job {
             toPrint += "Location: "+ location.toString() + "\n";
         }
 
-        if(positionType == null) {
+        if(positionType == null || positionType.toString().equals("")) {
             toPrint += "Position Type: Data not available\n";
             oops++;
         }
@@ -127,7 +127,7 @@ public class Job {
             toPrint += "Position Type: "+ positionType.toString() + "\n";
         }
 
-        if(coreCompetency == null) {
+        if(coreCompetency == null || coreCompetency.toString().equals("")) {
             toPrint += "Core Competency: Data not available\n";
             oops++;
         }
